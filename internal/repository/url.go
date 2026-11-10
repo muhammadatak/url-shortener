@@ -19,7 +19,7 @@ func NewUrl(con *sql.DB) domain.UrlRepository {
 }
 
 func (u *urlRepository) FindByCode(ctx context.Context, code string) (result domain.Url, err error) {
-	dataset := u.db.From("urls").Where(goqu.C("short_code").Eq("code"))
+	dataset := u.db.From("urls").Where(goqu.C("short_code").Eq(code))
 	_, err = dataset.ScanStructContext(ctx, &result)
 	return
 }

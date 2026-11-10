@@ -36,7 +36,7 @@ func (u *urlService) Redirect(ctx context.Context, code string) (string, error) 
 		return "", errors.New("notfound")
 	}
 
-	return url.ShortCode, nil
+	return url.LongUrl, nil
 
 }
 
