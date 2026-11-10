@@ -7,6 +7,11 @@ import (
 	"github.com/muhammadatak/url-shortener/dto"
 )
 
+const (
+	ALPHABET   = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+	CODELENGHT = 7
+)
+
 type Url struct {
 	Id        int64        `db:"id"`
 	ShortCode string       `db:"short_code"`
@@ -21,6 +26,6 @@ type UrlRepository interface {
 }
 
 type UrlService interface {
-	Shorten(ctx context.Context, url dto.CreateUrlData) error
-	Redirect(ctx context.Context, code string) (dto.UrlData, error)
+	Shorten(ctx context.Context, url dto.CreateUrlData) (dto.UrlData, error)
+	Redirect(ctx context.Context, code string) (string, error)
 }
