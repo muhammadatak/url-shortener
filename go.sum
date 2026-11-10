@@ -1,0 +1,4 @@
+github.com/doug-martin/goqu/v9 v9.25.0 h1:g8zy34MwS1Q/RcEnY/9wB21xv9AQQXfE0mSlWmwsVtI=
+github.com/doug-martin/goqu/v9 v9.25.0/go.mod h1:N2bFjEJdaSS63muKeblweBurK81jQ+WSGja8gT6ykL8=
+github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
+github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
